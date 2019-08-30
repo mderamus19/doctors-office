@@ -7,8 +7,7 @@ class Patient():
         self.__health_ins_num = health_ins_num
         self.__first_name = first_name
         self.__last_name = last_name
-# dunderscore is used because you want to keep these properties private. However, you will be able to pass in arguments.
-# keep parameters in order to pass in the information needed
+
     '''define getter for social security number, d.o.b. and health insurance account number.(readonly)'''
     @property
     def social_security_num(self):
@@ -44,7 +43,7 @@ class Patient():
             self.__address = address
         else:
             raise TypeError("Please provide a string value for the address")
-# you only need a getter which creates the calculated full name by combining first name and last name
+
     '''define getter and setter for full name'''
     @property
     def full_name(self):
@@ -58,5 +57,5 @@ print(cashew.full_name)
 print(cashew.social_security_num)
 print(cashew.health_ins_num)
 print(cashew.date_of_birth)
-
+cashew.date_of_birth
 
